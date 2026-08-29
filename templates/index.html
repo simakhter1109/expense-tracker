@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>My Monthly Expense Tracker</h1>
+
+    <section>
+        <h2>Set Your Budget</h2>
+        <input type="number" id="budgetInput" placeholder="Enter total budget">
+        <button id="setBudgetBtn">Set Budget</button>
+    </section>
+
+    <section>
+        <h2>Summary</h2>
+        <p>Total Budget: ₹<span id="totalBudget">0</span></p>
+        <p>Total Spent: ₹<span id="totalSpent">0</span></p>
+        <p>Remaining: ₹<span id="remaining">0</span></p>
+    </section>
+
+    <section>
+        <h2>Add an Expense</h2>
+        <input type="text" placeholder="Title (e.g. Groceries)">
+        <input type="number" placeholder="Amount">
+        <select>
+            <option value="Rent">Rent</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Other">Other</option>
+        </select>
+        <button>Add Expense</button>
+    </section>
+
+    <section>
+        <h2>Your Expenses</h2>
+        <ul>
+            <li>No expenses yet.</li>
+        </ul>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
