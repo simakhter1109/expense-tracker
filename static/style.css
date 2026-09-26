@@ -2,24 +2,18 @@
     --sage: #a3b899;
     --sage-light: #d4e0cd;
     --pink: #f0c4cf;
+    --pink-dark: #e888a3;
     --pink-light: #f9e3e8;
     --off-white: #faf7f2;
     --text-dark: #4a4a42;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-font-family: 'Quicksand', sans-serif;
-    background-color: var(--off-white);
-    color: var(--text-dark);
-    padding: 20px;
-    max-width: 700px;
-    margin: 0 auto;
+    background-color: var(--pink-light);
+    background-image:
+        linear-gradient(var(--pink) 1px, transparent 1px),
+        linear-gradient(90deg, var(--pink) 1px, transparent 1px);
+    background-size: 25px 25px;
 }
 
 h1 {
