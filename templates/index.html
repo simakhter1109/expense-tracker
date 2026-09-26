@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Expense Tracker</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Pockit Monee</h1>
@@ -14,12 +15,20 @@
         <button id="setBudgetBtn">Set Budget</button>
     </section>
 
-    <section>
-        <h2>Reality Check</h2>
-        <p>Total Budget: ₹<span id="totalBudget">0</span></p>
-        <p>Total Spent: ₹<span id="totalSpent">0</span></p>
-        <p>Remaining: ₹<span id="remaining">0</span></p>
-    </section>
+<section>
+    <h2>Summary</h2>
+    <p>Total Budget: ₹<span id="totalBudget" class="stat-number">0</span></p>
+    <div class="summary-boxes">
+        <div class="summary-box spent-box">
+            <div class="label">Total Spent</div>
+            <div class="amount">₹<span id="totalSpent">0</span></div>
+        </div>
+        <div class="summary-box remaining-box">
+            <div class="label">Remaining</div>
+            <div class="amount">₹<span id="remaining">0</span></div>
+        </div>
+    </div>
+</section>
 
 <section>
     <h2>Oops, Spent</h2>
