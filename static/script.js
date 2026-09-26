@@ -27,8 +27,9 @@ addExpenseBtn.addEventListener('click', function() {
     const amount = Number(expenseAmount.value);
 
     const newItem = document.createElement('li');
-    newItem.textContent = title + " - ₹" + amount;
+    newItem.innerHTML = title + " - ₹<span class='stat-number'>" + amount + "</span>";
     expenseList.appendChild(newItem);
+    
 
     totalSpent = totalSpent + amount;
     totalSpentDisplay.textContent = totalSpent;
