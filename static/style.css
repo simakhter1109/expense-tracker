@@ -130,3 +130,10 @@ section p {
     font-weight: 700;
     color: var(--text-dark);
 }
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
