@@ -5,6 +5,7 @@
     --pink-dark: #e888a3;
     --pink-light: #f9e3e8;
     --off-white: #faf7f2;
+    --beige: #e8e0d0;
     --text-dark: #4a4a42;
 }
 
@@ -89,19 +90,27 @@ li {
     border-bottom: 1px solid var(--pink-light);
 }
 
-.summary-line {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--text-dark);
+.summary-box-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--beige);
+    border: 3px outset var(--pink);
+    padding: 14px 18px;
     margin-bottom: 10px;
 }
 
-.summary-line .stat-number {
-    color: var(--pink-dark);
+.summary-box-row .label {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: black;
+}
+
+.summary-box-row .stat-number {
     font-family: 'Press Start 2P', cursive;
     font-size: 0.9rem;
-    margin-left: 4px;
+    color: black;
 }
 
 
