@@ -101,15 +101,17 @@ li {
 }
 
 .summary-box-row .label {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 0.95rem;
     color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .summary-box-row .stat-number {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.9rem;
+    font-family: 'VT323', monospace;
+    font-size: 1.8rem;
     color: black;
 }
 
