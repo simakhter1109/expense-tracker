@@ -157,11 +157,6 @@ section p {
     color: var(--text-dark);
 }
 
-.stat-number {
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 700;
-    color: var(--text-dark);
-}
 
 .form-row {
     display: flex;
