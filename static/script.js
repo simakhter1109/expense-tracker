@@ -62,7 +62,7 @@ function renderExpenseList() {
         const exp = expenses[i];
         const icon = getIconForCategory(exp.category);
         const newItem = document.createElement('li');
-        newItem.innerHTML = "<span class='expense-icon'>" + icon + "</span><span class='expense-title'>" + exp.title + "</span><span class='stat-number expense-amount'>₹" + exp.amount + "</span>";
+        newItem.innerHTML = "<span class='expense-label'>" + icon + " " + exp.title + "</span><span class='stat-number expense-amount'>₹" + exp.amount + "</span>";
         expenseList.appendChild(newItem);
     }
 }

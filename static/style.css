@@ -86,8 +86,29 @@ ul {
 }
 
 li {
-    padding: 10px 0;
-    border-bottom: 1px solid var(--pink-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--beige);
+    border: 3px outset var(--pink);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.expense-label {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.expense-amount {
+    font-family: 'VT323', monospace;
+    font-size: 1.8rem;
+    color: black;
 }
 
 .summary-box-row {
