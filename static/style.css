@@ -61,16 +61,17 @@ section > *:nth-child(2) {
 }
 
 button {
-    padding: 12px 20px;
+    padding: 14px 20px;
     background-color: var(--pink-light);
     color: var(--text-dark);
-    border: 4px outset var(--pink);
+    border: 3px outset var(--pink);
     border-radius: 0;
     cursor: pointer;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.65rem;
     text-transform: uppercase;
     box-shadow: none;
+    box-sizing: border-box;
 }
 
 button:hover {
