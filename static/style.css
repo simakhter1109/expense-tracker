@@ -161,7 +161,7 @@ section p {
 
 .form-row {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -175,6 +175,7 @@ input {
     font-family: 'Space Mono', monospace;
     font-size: 0.95rem;
     color: black;
+    box-sizing: border-box;
 }
 
 input::placeholder {
