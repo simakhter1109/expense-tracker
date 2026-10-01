@@ -76,10 +76,9 @@ setBudgetBtn.addEventListener('click', function() {
 addExpenseBtn.addEventListener('click', function() {
     const title = expenseTitle.value;
     const amount = Number(expenseAmount.value);
-    const category = expenseCategory.value;
 
     const expenses = getExpenses();
-    expenses.push({ title: title, amount: amount, category: category });
+    expenses.push({ title: title, amount: amount, category: "other" });
     saveExpenses(expenses);
 
     renderSummary();
@@ -87,7 +86,6 @@ addExpenseBtn.addEventListener('click', function() {
 
     expenseTitle.value = "";
     expenseAmount.value = "";
-    expenseCategory.value = "";
 });
 
 renderSummary();
