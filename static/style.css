@@ -164,3 +164,18 @@ section p {
     gap: 10px;
     flex-wrap: wrap;
 }
+
+input {
+    padding: 14px 18px;
+    margin-bottom: 8px;
+    border: 3px outset var(--pink);
+    border-radius: 0;
+    background-color: var(--beige);
+    font-family: 'Space Mono', monospace;
+    font-size: 0.95rem;
+    color: black;
+}
+
+input::placeholder {
+    color: #7a7268;
+}
